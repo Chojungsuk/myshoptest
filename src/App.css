@@ -1,0 +1,66 @@
+.start{
+  opacity: 0;
+  /* 요 클래스 선택자를 선택하면 투명도가 제로(투명하단얘기) */
+  /* 메모장에 1번한거임 */
+ 
+  /* transform: scale(0); */
+}
+
+.end{
+  opacity: 1;
+  /* 동작 후 opacity :1 */   
+  /* 메모장에 2번 한거임 */
+  transition: opacity 0.5s; /* opacity가 변경 될 때 0.5초에 걸쳐서 변경해주세요 */
+  /* 트랜지션이 일어날때 걸리는시간이 0.5초(전환할때 0.5초) */
+  /* 메모장에 3번한거임 */
+
+  /* transform: scale(1.5); */
+}
+
+
+.main-bg{
+  height: 300px;
+  /* background-image: url('./img/bg.png'); */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
